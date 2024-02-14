@@ -7,6 +7,7 @@ body {
     background-image: url("./img/geeks_logo.png");
     background-repeat: no-repeat;
     background-size: cover;
+	 overflow: hidden;
 }
 
 /* Position the "No" button absolutely within body */
@@ -14,7 +15,6 @@ body {
     position: absolute;
     margin-left: 150px;
     transition: 0.5s;
-    /* Smooth movement */
 }
 .text {
     background: white;
@@ -27,9 +27,8 @@ body {
 }
 
 #yesButton {
-    position: absolute;
+    position: relative;
     margin-right: 150px;
-    /* Smooth movement */
 }
 
 .header_text {
@@ -48,10 +47,11 @@ body {
     gap: 200px;
     flex-direction: row;
     justify-content: space-around;
+	 gap: 20px;
     align-items: center;
     margin-top: 20px;
     margin-left: 20px;
-    /* optional: adds some space between the buttons */
+	 gap: 60px;
 }
 
 .btn {
@@ -88,6 +88,14 @@ img {
 }
 
 #yesButton {
-    position: absolute;
+    position: absolute; 
     right: 850px;
+}
+
+@media (max-width: 992px) {
+	#yesButton {
+			position: absolute;
+			left: 180px;
+			right: auto;
+		}
 }
